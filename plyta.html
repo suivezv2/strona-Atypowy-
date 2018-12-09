@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pl PL">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+    <title>Jakub Zacher</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Anton', sans-serif;
+    }
+
+    header {
+        width: 100%;
+        height: 180px;
+        background-color: dimgray;
+        margin: auto;
+        text-align: center;
+        display: block;
+    }
+
+    header img {
+        width: 300px;
+        height: 174px;
+        display: block;
+        margin: auto;
+    }
+
+    #nawigacja {
+        width: 100%;
+        height: 50px;
+        background-color: black;
+        color: white;
+        display: block;
+        margin: auto;
+    }
+
+    ul {
+        float: left;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+    }
+
+    li a {
+        height: 29px;
+        display: block;
+        float: left;
+        text-align: center;
+        font-size: 1.2em;
+        width: 200px;
+        text-decoration: none;
+        color: white;
+        background-color: black;
+        padding: 10px 15px;
+        margin: 0px 1px 1px 0px;
+    }
+
+    li a:hover {
+        color: black;
+        background-color: white;
+    }
+
+    #baner {
+        height: 600px;
+        width: 35%;
+        display: block;
+        float: left;
+    }
+    #baner img{
+        height: 600px;
+        width: 100%;
+    }
+    #content {
+        height: 600px;
+        font-size: 30px;
+        padding: 10px;
+    }
+
+    #kontener {
+        width: 80%;
+        height: 600px;
+        margin: auto;
+        /*background-color: #edb588;*/
+    }
+
+    footer {
+        width: 100%;
+        height: 79px;
+        background-color: black;
+        display: block;
+    }
+
+    #copy {
+        width: 150px;
+        height: 30px;
+        display: block;
+        margin: auto;
+        color: white;
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    audio {
+        width: 30px;
+        height: 30px;
+    }
+    button{
+        background: none;
+        border: 0px;
+    }
+    #menu{
+        width: 80%;
+        margin: auto;
+    }
+</style>
+<script type="text/javascript">
+    var audio; 
+    audio=document.getElementsById('hinata');
+    audio=document.getElementsById('lavender');
+    audio=document.getElementById('niewazne');
+    audio=document.getElementById('ufo');
+    audio=document.getElementById('zombie');
+    audio=document.getElementById('mojo');
+    audio=document.getElementById('yeti');
+    audio=document.getElementById('wampir');
+</script>
+
+<body>
+    <header>
+        <img src="logo.png">
+    </header>
+    <div id="nawigacja">
+        <div id="menu">
+        <ul>
+            <li><a href="atypowy.html">STRONA GŁÓWNA</a></li>
+            <li><a href="#">NOWA PŁYTA</a></li>
+        </ul>
+        </div>
+    </div>
+    <div id="kontener">
+        <div id="baner">
+            <img src="SZPAKU_ATYPOWY.png" >
+        </div>
+        <div id="content">
+            &nbsp;&nbsp;&nbsp;1. Hinata<audio id="hinata"><source src="muzyka/Hinata.mp3" type="audio/mp3"></audio> <button onclick="hinata.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="hinata.pause()"><img src="stop.png" width="30px" height="30px"></button><br>
+            &nbsp;&nbsp;&nbsp;2. Lavender Town <audio id="lavender"><source src="muzyka/Lavender.mp3" type="audio/mp3"></audio><button onclick="lavender.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="lavender.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;3. Nieważne <audio id="niewazne"><source src="muzyka/Niewazne.mp3" type="audio/mp3"></audio><button onclick="niewazne.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="niewazne.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;4. UFO <audio id="ufo"><source src="muzyka/UFO.mp3" type="audio/mp3"></audio><button onclick="ufo.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="ufo.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;5. Zombie <audio id="zombie"><source src="muzyka/Zombie.mp3" type="audio/mp3"></audio><button onclick="zombie.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="zombie.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;6. Mojo jojo <audio id="mojo"><source src="muzyka/Mojo.mp3" type="audio/mp3"></audio><button onclick="mojo.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="mojo.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;7. Ja Yeti <audio id="yeti"><source src="muzyka/Yeti.mp3" type="audio/mp3"></audio><button onclick="yeti.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="yeti.pause()"><img src="stop.png" width="30px" height="30px"></button><br> 
+            &nbsp;&nbsp;&nbsp;8. Oddajemy krew Wampirom <audio id="wampir"><source src="muzyka/Krew.mp3" type="audio/mp3"></audio><button onclick="wampir.play()"><img src="play.png" width="30px" height="30px"></button><button onclick="wampir.pause()"><img src="stop.png" width="30px" height="30px"></button>
+        </div>
+    </div>
+    <footer>
+        <div id="copy">
+            copyright &copy; 2018
+        </div>
+    </footer>
+</body>
+
+</html>
